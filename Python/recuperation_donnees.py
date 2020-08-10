@@ -330,7 +330,7 @@ def charger_donnees():
 
         
 if __name__ == "__main__":
-    update_donnees_brutes_cours()
+    #update_donnees_brutes_cours()
     creation_base_donnees_traites()
     export_excel()
 

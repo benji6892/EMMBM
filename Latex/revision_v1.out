@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Equilibrium Models}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Baseline Model}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Extensions}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Calibration}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Data}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Calibration strategy}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Results}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Reversible Investment}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Mothballing and scrapping options}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Disentangling investment from operating costs}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{The 2017 Bubble and its Aftermath}{}% 12
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Revenues allocation}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Electricity consumption of Bitcoin}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 16
+\BOOKMARK [1][-]{section.8}{Appendix}{}% 17
+\BOOKMARK [2][-]{subsection.8.1}{Proof of Propositions}{section.8}% 18
+\BOOKMARK [1][-]{appendix.A}{Derivation of equations \(1\) and \(4\)}{}% 19
+\BOOKMARK [1][-]{appendix.B}{Entry rule during the first period}{}% 20
+\BOOKMARK [1][-]{appendix.C}{Exchange rate data for Bitcoin}{}% 21
+\BOOKMARK [1][-]{appendix.D}{Block generation rate}{}% 22
+\BOOKMARK [1][-]{appendix.E}{Law-of-motion of block rewards }{}% 23
+\BOOKMARK [1][-]{appendix.F}{Estimation of Q}{}% 24
+\BOOKMARK [1][-]{appendix.G}{Block bootstrap}{}% 25
+\BOOKMARK [1][-]{appendix.H}{Out-of-sample experiments}{}% 26
+\BOOKMARK [1][-]{appendix.I}{Fully reversible investments}{}% 27
+\BOOKMARK [1][-]{appendix.J}{Derivation of payoffs density fe}{}% 28
+\BOOKMARK [1][-]{appendix.K}{Price of mining hardware}{}% 29
+\BOOKMARK [1][-]{appendix.L}{Model with time-to-build}{}% 30
+\BOOKMARK [1][-]{appendix.M}{Model with convex adjustment costs}{}% 31

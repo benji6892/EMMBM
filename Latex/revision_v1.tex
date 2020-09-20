@@ -856,13 +856,10 @@ Figure \ref{fig:R-Q}. There is a clear correlation between the two
 variables. Our model suggests that their structural relation should become
 apparent if one takes the ratio of the two series and detrend it at the rate
 of technological progress $a$. Then the resulting series should behave as a
-reflected GBM. A natural guess for the rate of progress is
-Moore's law according to which processor speed doubles every two years. We
-actually expect improvements in the mining technology to outpace those in
+reflected GBM. For many years, improvements in the processing industry have followed Moore's law, according to which processor speed doubles every two years. We expect improvements in the mining technology to outpace those in
 processing speed because miners came up with a series of innovations which
-allowed them to leverage their computing power. Thus we will refine our
-guess later on by calibrating the value of $a$. Yet it is instructive
-at this exploratory stage to use Moore's law as a benchmark.
+allowed them to leverage their computing power. Thus, at this stage we pick a rate of techological progress slightly  faster than Moore's law (1.5 times faster). We will refine our
+guess later on by calibrating the value of $a$. 
 
 \begin{figure}[]
 \caption{Detrended Payoff Series}
@@ -1050,10 +1047,35 @@ We find that, for the S\&P 500, $\sigma^2=0.053$ for the first period and $%
 \hline\hline
 \end{tabular}}
 \end{center}
+
+\scalebox{.775}{
+\begin{tabular}{lcl|ccc}
+\hline \hline
+\multicolumn{2}{l}{Parameters} & Interpretation & & 3rd period & \\
+\hline \hline
+\vspace{-1.5ex}& & & & & \\
+\multicolumn{3}{l|}{\textsc{A. Maximum Likelihood}} & & & \\
+\multicolumn{2}{l}{$\alpha$} & Trend $R_t$     & & 0.27 & \\
+\multicolumn{2}{l}{$\sigma^2$} & Volatility $R_t$  & & 0.80 & \\
+\vspace{-1.5ex}& & & & & \\
+\hline
+\vspace{-1.5ex}& & & & & \\
+\multicolumn{3}{l|}{\textsc{B. Calibration}}& Baseline & Halvings & Time-to-Build \\
+\multicolumn{2}{l}{ a} & Rate of TP & $0.76$   & $0.95$   & $0.65$ \\
+&    &            & ($0.34$) & ($0.31$) & ($0.32$)\\
+\multicolumn{2}{l}{$K_0$} & Total Costs & \$ $182$ &  \$ $173$ & \$ $160$ \\
+&        &             & (\$ $203$)  & (\$ $122$)& (\$ $152$)\\
+\multicolumn{2}{l}{$\delta$} & Time-to-Build  & & &  $43.5$ days \\
+&           &      &               &            &  ($21.3$ days) \\
+\hline\hline
+\end{tabular}
+}
+
 \footnotesize{Note: Calibrations based on an annual discount rate $r=10\%$. $K_0$ is the calibrated total cost per Terahash-second at the first day of
 each subperiod.
 All parameters expressed as yearly rates except the time-to-build, $\delta$, which is expressed in days.
 Standard errors from block bootstrap in parenthesis.}
+
 \end{table}
 
 

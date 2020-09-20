@@ -1,6 +1,7 @@
 """ Plots graphs for the model with halving. Needs as input an excel file with
 the barrier computed on Matlab. """
 
+import csv
 import openpyxl
 from recuperation_donnees import charger_donnees
 from simulation_Q_base import *
@@ -125,15 +126,14 @@ show()
 
 
 # on importe les donnees de matlab
-wb=openpyxl.load_workbook('periode2.xlsx')
-sheet = wb.get_sheet_by_name('Feuil1')
-maxi=sheet.max_row
-
 Q_sim_hf=[]
-Bt_hf=[]
-for i in range(1,maxi+1):
-    Q_sim_hf.append(sheet.cell(row=i,column=1).value)
-    Bt_hf.append(sheet.cell(row=i,column=2).value)
+Bt = []
+# on importe les donnees de matlab
+with open('periode3.csv') as csvfile:
+    file = csv.reader(csvfile, delimiter=';', quotechar='"')
+    for row in file:
+        Q_sim_hf.append(double(row[0].replace(',', '.')))
+        Bt.append(double(row[1].replace(',', '.')))
 
 d=3491
 f=4271
@@ -142,14 +142,14 @@ h=4140
 # on recalcule le hashrate dans le modèle de base
 Rp=R[d:f+1]
 Q0=Q[d-1]
-a=0.00207
-B_tilde=5.30
+a=0.00209
+B_tilde=0.605
 Q_sim_base,P_sim_base=simulationQ(a,B_tilde,Rp,Q0)
 
 # now model with delay
-a_delay = 0.002475
-B_tilde_delay = 0.6
-delta = 46.5
+a_delay = 0.001790
+B_tilde_delay = 0.490
+delta = 42.55
 C_sim_delay,Q_sim_delay,P_sim_delay=simulationQdelay(a_delay,\
                                                      B_tilde_delay,delta,Rp,Q0)
 

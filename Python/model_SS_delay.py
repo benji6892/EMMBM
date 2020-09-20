@@ -197,7 +197,7 @@ r=0.1/365
 
 a_init=0.002
 B_tilde_init=0.6
-delta_init=50
+##delta_init=50
 
 Rp=R[d:f+1]
 Pp=P[d:f+1]
@@ -205,7 +205,7 @@ Qp=Q[d:f+1]
 Q0=Q[d-1]
 
 #delta_opt = objective_list.index(min(objective_list))+1
-delta_opt = 5
+delta_opt = 40
    
 
 

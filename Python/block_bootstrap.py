@@ -170,47 +170,15 @@ R,P,Q,cours=charger_donnees()
 #                              1ere periode
 #*******************************************************************************
 
-d=812
-f=1483
-
-a0=0.0032
-B_tilde0=26000
-r=0.1/365
-
-debuts=[0,121,277,417,608] # debuts des blocs [0,182,364,546,728]
-graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
-
-##B=100
-##v_a,v_mu,v_sigma2,v_CT,v_B_tilde=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,r,B)
-####IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,90)
-####IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,95)
+##d=812
+##f=1483
 ##
-##standard_deviation(v_a,v_mu,v_sigma2,v_CT,v_B_tilde)
-##
-### on en fait un avec un graphique
-####dR=exp(diff(log(R[d:f+1])))
-####dQ=exp(diff(log(Q[d:f+1])))
-####bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
-
-
-
-
-
-#*******************************************************************************
-#                              2eme periode
-#*******************************************************************************
-
-##d=2095
-##f=3003
-##
-##a0=0.00207
-##B_tilde0=5.30
+##a0=0.0032
+##B_tilde0=26000
 ##r=0.1/365
 ##
-### 2184 2363 2470 2570 2697 2915
-##debuts=[0,89,268,375,475,602,820] 
+##debuts=[0,121,277,417,608] # debuts des blocs [0,182,364,546,728]
 ##graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
-####
 ##
 ####B=100
 ####v_a,v_mu,v_sigma2,v_CT,v_B_tilde=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,r,B)
@@ -223,4 +191,57 @@ graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
 ######dR=exp(diff(log(R[d:f+1])))
 ######dQ=exp(diff(log(Q[d:f+1])))
 ######bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
-##                                            
+
+
+
+
+
+#*******************************************************************************
+#                              2eme periode
+#*******************************************************************************
+
+d=2095
+f=3003
+
+a0=0.00207
+B_tilde0=5.30
+r=0.1/365
+
+# 2184 2363 2470 2570 2697 2915
+debuts=[0,89,268,375,475,602,820] 
+graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
+##
+
+B=100
+v_a,v_mu,v_sigma2,v_CT,v_B_tilde=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,r,B)
+##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,90)
+##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,95)
+
+standard_deviation(v_a,v_mu,v_sigma2,v_CT,v_B_tilde)
+
+# on en fait un avec un graphique
+##dR=exp(diff(log(R[d:f+1]))) 
+##dQ=exp(diff(log(Q[d:f+1])))
+##bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
+
+
+
+
+###*******************************************************************************
+###                              3eme periode
+###*******************************************************************************
+
+##d=3491
+##f=4271
+##
+##a0=0.00209
+##B_tilde0=0.6
+##r=0.1/365
+##
+##debuts=[0, 243, 449, 588, 712] 
+##graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
+##
+##B=100
+##v_a,v_mu,v_sigma2,v_CT,v_B_tilde=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,r,B)
+##
+##standard_deviation(v_a,v_mu,v_sigma2,v_CT,v_B_tilde)     

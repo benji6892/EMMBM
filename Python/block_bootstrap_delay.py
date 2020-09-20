@@ -114,29 +114,29 @@ R,P,Q,cours=charger_donnees()
 #                              1ere periode
 #*******************************************************************************
 
-d=812
-f=1483
-
-a0=0.003
-B_tilde0=21963
-delta_0 = 11.5
-
-r=0.1/365
-
-debuts=[0,121,277,417,608] # debuts des blocs [0,182,364,546,728]
-#graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
-
-B=100
-v_a,v_B_tilde,v_delta,v_CT=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,delta_0,r,B)
-##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,90)
-##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,95)
-
-standard_deviation(v_a,v_B_tilde,v_delta,v_CT)
-
-# on en fait un avec un graphique
-##dR=exp(diff(log(R[d:f+1])))
-##dQ=exp(diff(log(Q[d:f+1])))
-##bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
+##d=812
+##f=1483
+##
+##a0=0.003
+##B_tilde0=21963
+##delta_0 = 11.5
+##
+##r=0.1/365
+##
+##debuts=[0,121,277,417,608] # debuts des blocs [0,182,364,546,728]
+###graphique_blocs(debuts,d,f,P,len(debuts),a0,B_tilde0)
+##
+##B=100
+##v_a,v_B_tilde,v_delta,v_CT=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,delta_0,r,B)
+####IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,90)
+####IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,95)
+##
+##standard_deviation(v_a,v_B_tilde,v_delta,v_CT)
+##
+### on en fait un avec un graphique
+####dR=exp(diff(log(R[d:f+1])))
+####dQ=exp(diff(log(Q[d:f+1])))
+####bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
 
 
 
@@ -167,4 +167,31 @@ standard_deviation(v_a,v_B_tilde,v_delta,v_CT)
 ####dR=exp(diff(log(R[d:f+1])))
 ####dQ=exp(diff(log(Q[d:f+1])))
 ####bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
+
+
+#*******************************************************************************
+#                              3rd period
+#*******************************************************************************
+
+d=3491
+f=4271
+
+a0=0.00178
+B_tilde0=0.5
+delta_0 = 42.5
+r=0.1/365
+
+debuts=[0, 243, 449, 588, 712]
+
+B=100
+v_a,v_B_tilde,v_delta,v_CT=Bootstrap(debuts,d,f,R,Q,a0,B_tilde0,delta_0,r,B)
+##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,90)
+##IC_bootstrap(v_a,v_mu,v_sigma2,v_CT,v_B_tilde,95)
+
+standard_deviation(v_a,v_B_tilde,v_delta,v_CT)
+
+# on en fait un avec un graphique
+##dR=exp(diff(log(R[d:f+1])))
+##dQ=exp(diff(log(Q[d:f+1])))
+##bootstrap(debuts,d,f,dR,dQ,a0,B_tilde0,r,CT0,graph=True)
                                             

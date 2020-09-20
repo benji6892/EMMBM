@@ -1,0 +1,1599 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.20)  20 SEP 2020 23:16
+entering extended mode
+**./revision_v1.tex
+(revision_v1.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box45
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.st
+y
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\utopia.sty
+Package: utopia 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
+
+Package utopia Warning: This package is to be regarded as obsolete.
+(utopia)                See the PSNFSS documentation.
+
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+put on input line 11
+2.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1put.fd
+File: t1put.fd 2001/06/04 font definitions for T1/put.
+))
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/a4wide\a4wide.sty
+Package: a4wide 1994/08/30
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/ntgclass\a4.sty
+Package: a4 2020/02/18 v1.2g A4 based page layout
+))
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks19
+\verbatim@line=\toks20
+\verbatim@in@stream=\read2
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/09/02 v3.5a Customizing captions (AR)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/08/30 v2.0 caption3 kernel (AR)
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count175
+\c@continuedfloat=\count176
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen144
+)) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count177
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count178
+\leftroot@=\count179
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count180
+\DOTSCASE@=\count181
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count182
+\c@MaxMatrixCols=\count183
+\dotsspace@=\muskip16
+\c@parentequation=\count184
+\dspbrk@lvl=\count185
+\tag@help=\toks22
+\row@=\count186
+\column@=\count187
+\maxfields@=\count188
+\andhelp@=\toks23
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks24
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count189
+\float@exts=\toks26
+\float@box=\box48
+\@float@everytoks=\toks27
+\@floatcapt=\box49
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.st
+y
+Package: placeins 2005/04/18  v 2.2
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\flafter.sty
+Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
+Applying: [2015/01/01] float order in 2-column on input line 49.
+Already applied: [0000/00/00] float order in 2-column on input line 151.
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.st
+y
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count190
+\LTcapwidth=\dimen153
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count191
+\LT@rows=\count192
+\c@LT@tables=\count193
+\c@LT@chunks=\count194
+\LT@p@ftn=\toks28
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen154
+\ar@mcellbox=\box54
+\extrarowheight=\dimen155
+\NC@list=\toks29
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box55
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\dsfont.
+sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip58
+\bibsep=\skip59
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count195
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\euscript.st
+y
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count196
+\sf@farskip=\skip60
+\sf@captopadj=\dimen156
+\sf@capskip=\skip61
+\sf@nearskip=\skip62
+\c@subfigure=\count197
+\c@subfigure@save=\count198
+\c@lofdepth=\count199
+\c@subtable=\count266
+\c@subtable@save=\count267
+\c@lotdepth=\count268
+\sf@top=\skip63
+\sf@bottom=\skip64
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen157
+\lightrulewidth=\dimen158
+\cmidrulewidth=\dimen159
+\belowrulesep=\dimen160
+\belowbottomsep=\dimen161
+\aboverulesep=\dimen162
+\abovetopsep=\dimen163
+\cmidrulesep=\dimen164
+\cmidrulekern=\dimen165
+\defaultaddspace=\dimen166
+\@cmidla=\count269
+\@cmidlb=\count270
+\@aboverulesep=\dimen167
+\@belowrulesep=\dimen168
+\@thisruleclass=\count271
+\@lastruleclass=\count272
+\@thisrulewidth=\dimen169
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\stmaryrd.st
+y
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
+y
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen170
+\enit@toks=\toks30
+\enit@inbox=\box56
+\enit@count@id=\count273
+\enitdp@description=\count274
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
+\dth@everypar=\toks36
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+y
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
+y
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
+mds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
+r.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkey
+s.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
+inekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescap
+e.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxma
+cro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
+sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen171
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.
+sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count277
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count278
+ (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen172
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintc
+alc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count279
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.
+sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.
+sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
+filecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniq
+uecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip69
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.st
+y
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count285
+\multirow@dima=\skip71
+\bigstrutjot=\dimen175
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.st
+y
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks37
+\footnotemargin=\dimen176
+\c@pp@next@reset=\count286
+
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+) (C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/tools\xr.sty
+Package: xr 2019/07/22 v5.05 eXternal References (DPC)
+)
+
+Package xr Warning: 
+No file Technical_Appendix.aux
+LABELS NOT IMPORTED.
+ on input line 39.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+\c@alg=\count287
+\c@thm=\count288
+\c@lem=\count289
+\c@prop=\count290
+\c@hyp=\count291
+\c@hypt=\count292
+\c@rem=\count293
+\c@exemple=\count294
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdfmode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count295
+\l__pdf_internal_box=\box57
+) (revision_v1.aux)
+\openout1 = `revision_v1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count296
+\scratchdimen=\dimen177
+\scratchbox=\box58
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen178
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks39
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.st
+y
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring ON on input line 115.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
+y
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
+titlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count302
+)
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
+ (revision_v1.out) (revision_v1.out)
+\@outlinefile=\write3
+\openout3 = `revision_v1.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
+.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
+.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+32.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+LaTeX Font Info:    Trying to load font information for TS1+put on input line 1
+32.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1put.fd
+File: ts1put.fd 2001/06/04 font definitions for TS1/put.
+)
+[1
+
+{C:/Users/Benjamin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+
+Package natbib Warning: Citation `Mora' on page 2 undefined on input line 171.
+
+
+Package natbib Warning: Citation `Mora' on page 2 undefined on input line 171.
+
+[2]
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 3 undefined on inpu
+t line 202.
+
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 3 undefined on inpu
+t line 203.
+
+
+Package natbib Warning: Citation `Collard-Wexler' on page 3 undefined on input 
+line 213.
+
+
+Package natbib Warning: Citation `Collard-Wexler' on page 3 undefined on input 
+line 213.
+
+
+Package natbib Warning: Citation `Buchholz' on page 3 undefined on input line 2
+13.
+
+
+Package natbib Warning: Citation `Buchholz' on page 3 undefined on input line 2
+13.
+
+[3]
+
+Package natbib Warning: Citation `Huberman' on page 4 undefined on input line 2
+73.
+
+
+Package natbib Warning: Citation `Huberman' on page 4 undefined on input line 2
+73.
+
+
+Package natbib Warning: Citation `Clay' on page 4 undefined on input line 277.
+
+
+Package natbib Warning: Citation `Clay' on page 4 undefined on input line 277.
+
+[4]
+
+Package natbib Warning: Citation `Satoshi' on page 5 undefined on input line 29
+1.
+
+
+Package natbib Warning: Citation `Satoshi' on page 5 undefined on input line 29
+1.
+
+
+Package natbib Warning: Citation `fast-payments' on page 5 undefined on input l
+ine 294.
+
+
+Package natbib Warning: Citation `fast-payments' on page 5 undefined on input l
+ine 295.
+
+
+Package natbib Warning: Citation `network' on page 5 undefined on input line 29
+5.
+
+
+Package natbib Warning: Citation `network' on page 5 undefined on input line 29
+5.
+
+
+Package natbib Warning: Citation `Reid' on page 5 undefined on input line 296.
+
+
+Package natbib Warning: Citation `Reid' on page 5 undefined on input line 296.
+
+
+Package natbib Warning: Citation `Athey' on page 5 undefined on input line 297.
+
+
+
+Package natbib Warning: Citation `Athey' on page 5 undefined on input line 297.
+
+
+
+Package natbib Warning: Citation `Foley' on page 5 undefined on input line 298.
+
+
+
+Package natbib Warning: Citation `Foley' on page 5 undefined on input line 298.
+
+
+
+Package natbib Warning: Citation `Grunspan' on page 5 undefined on input line 2
+99.
+
+
+Package natbib Warning: Citation `Grunspan' on page 5 undefined on input line 2
+99.
+
+
+Package natbib Warning: Citation `Bowden' on page 5 undefined on input line 300
+.
+
+
+Package natbib Warning: Citation `Bowden' on page 5 undefined on input line 300
+.
+
+
+Package natbib Warning: Citation `Schilling' on page 5 undefined on input line 
+305.
+
+
+Package natbib Warning: Citation `Schilling' on page 5 undefined on input line 
+305.
+
+
+Package natbib Warning: Citation `Biais2018' on page 5 undefined on input line 
+305.
+
+
+Package natbib Warning: Citation `Biais2018' on page 5 undefined on input line 
+306.
+
+
+Package natbib Warning: Citation `Hong' on page 5 undefined on input line 306.
+
+
+Package natbib Warning: Citation `Hong' on page 5 undefined on input line 307.
+
+
+Package natbib Warning: Citation `Fernandez' on page 5 undefined on input line 
+310.
+
+
+Package natbib Warning: Citation `Fernandez' on page 5 undefined on input line 
+310.
+
+
+Package natbib Warning: Citation `Gandal' on page 5 undefined on input line 311
+.
+
+
+Package natbib Warning: Citation `Gandal' on page 5 undefined on input line 311
+.
+
+
+Package natbib Warning: Citation `Chiu' on page 5 undefined on input line 312.
+
+
+Package natbib Warning: Citation `Chiu' on page 5 undefined on input line 313.
+
+
+Package natbib Warning: Citation `Cong' on page 5 undefined on input line 314.
+
+
+Package natbib Warning: Citation `Cong' on page 5 undefined on input line 314.
+
+
+Package natbib Warning: Citation `Rosenfeld' on page 5 undefined on input line 
+319.
+
+
+Package natbib Warning: Citation `Rosenfeld' on page 5 undefined on input line 
+319.
+
+
+Package natbib Warning: Citation `Houy' on page 5 undefined on input line 320.
+
+
+Package natbib Warning: Citation `Houy' on page 5 undefined on input line 320.
+
+
+Package natbib Warning: Citation `Biais' on page 5 undefined on input line 320.
+
+
+
+Package natbib Warning: Citation `Biais' on page 5 undefined on input line 321.
+
+
+
+Package natbib Warning: Citation `Ma' on page 5 undefined on input line 322.
+
+
+Package natbib Warning: Citation `Ma' on page 5 undefined on input line 323.
+
+
+Package natbib Warning: Citation `Cong2018' on page 5 undefined on input line 3
+23.
+
+
+Package natbib Warning: Citation `Cong2018' on page 5 undefined on input line 3
+23.
+
+
+Package natbib Warning: Citation `Cong2018' on page 5 undefined on input line 3
+25.
+
+
+Package natbib Warning: Citation `Cong2018' on page 5 undefined on input line 3
+25.
+
+
+Package natbib Warning: Citation `Alsabah' on page 5 undefined on input line 33
+0.
+
+
+Package natbib Warning: Citation `Alsabah' on page 5 undefined on input line 33
+0.
+
+
+Package natbib Warning: Citation `Huberman' on page 5 undefined on input line 3
+36.
+
+
+Package natbib Warning: Citation `Huberman' on page 5 undefined on input line 3
+36.
+
+[5]
+
+Package natbib Warning: Citation `DixitPyndick' on page 6 undefined on input li
+ne 345.
+
+
+Package natbib Warning: Citation `DixitPyndick' on page 6 undefined on input li
+ne 345.
+
+
+Package natbib Warning: Citation `Thomas' on page 6 undefined on input line 346
+.
+
+
+Package natbib Warning: Citation `Thomas' on page 6 undefined on input line 346
+.
+
+
+Package natbib Warning: Citation `Caplin' on page 6 undefined on input line 346
+.
+
+
+Package natbib Warning: Citation `Caplin' on page 6 undefined on input line 346
+.
+
+
+Package natbib Warning: Citation `Bachmann' on page 6 undefined on input line 3
+47.
+
+
+Package natbib Warning: Citation `Bachmann' on page 6 undefined on input line 3
+47.
+
+
+Package natbib Warning: Citation `BertolaCaballero' on page 6 undefined on inpu
+t line 350.
+
+
+Package natbib Warning: Citation `BertolaCaballero' on page 6 undefined on inpu
+t line 350.
+
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 6 undefined on inpu
+t line 351.
+
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 6 undefined on inpu
+t line 351.
+
+
+Package natbib Warning: Citation `Satoshi' on page 6 undefined on input line 37
+8.
+
+
+Package natbib Warning: Citation `Satoshi' on page 6 undefined on input line 37
+8.
+
+
+Package natbib Warning: Citation `MasteringBitcoin' on page 6 undefined on inpu
+t line 379.
+
+
+Package natbib Warning: Citation `MasteringBitcoin' on page 6 undefined on inpu
+t line 379.
+
+[6]
+
+Package natbib Warning: Citation `Rosenfeld' on page 7 undefined on input line 
+417.
+
+
+Package natbib Warning: Citation `Rosenfeld' on page 7 undefined on input line 
+417.
+
+[7]
+
+Package natbib Warning: Citation `Schilling' on page 8 undefined on input line 
+475.
+
+
+Package natbib Warning: Citation `Schilling' on page 8 undefined on input line 
+475.
+
+[8]
+
+Package natbib Warning: Citation `Schilling' on page 9 undefined on input line 
+505.
+
+
+Package natbib Warning: Citation `Schilling' on page 9 undefined on input line 
+505.
+
+
+Package natbib Warning: Citation `kareken' on page 9 undefined on input line 50
+6.
+
+
+Package natbib Warning: Citation `kareken' on page 9 undefined on input line 50
+6.
+
+
+Package natbib Warning: Citation `Schilling' on page 9 undefined on input line 
+508.
+
+
+Package natbib Warning: Citation `Schilling' on page 9 undefined on input line 
+508.
+
+
+Package natbib Warning: Citation `Biais2018' on page 9 undefined on input line 
+509.
+
+
+Package natbib Warning: Citation `Biais2018' on page 9 undefined on input line 
+509.
+
+
+Package natbib Warning: Citation `Biais2018' on page 9 undefined on input line 
+510.
+
+
+Package natbib Warning: Citation `Biais2018' on page 9 undefined on input line 
+510.
+
+[9] [10] [11]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 625.
+
+<images/exemple_payoff.png, id=222, 780.516pt x 195.129pt>
+File: images/exemple_payoff.png Graphic file (type png)
+<use images/exemple_payoff.png>
+Package pdftex.def Info: images/exemple_payoff.png  used on input line 628.
+(pdftex.def)             Requested size: 468.31322pt x 117.0783pt.
+<images/exemple_hashrate.png, id=224, 780.516pt x 195.129pt>
+File: images/exemple_hashrate.png Graphic file (type png)
+<use images/exemple_hashrate.png>
+Package pdftex.def Info: images/exemple_hashrate.png  used on input line 629.
+(pdftex.def)             Requested size: 468.31322pt x 117.0783pt.
+
+Overfull \hbox (7.59198pt too wide) in paragraph at lines 628--630
+ [][] 
+ []
+
+
+Overfull \hbox (7.59198pt too wide) in paragraph at lines 628--630
+ [] 
+ []
+
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 12 undefined on inp
+ut line 635.
+
+
+Package natbib Warning: Citation `CaballeroPyndick' on page 12 undefined on inp
+ut line 635.
+
+[12] [13 <./images/exemple_payoff.png> <./images/exemple_hashrate.png>]
+[14]
+
+Package natbib Warning: Citation `Grenadier2000' on page 15 undefined on input 
+line 714.
+
+
+Package natbib Warning: Citation `Grenadier2000' on page 15 undefined on input 
+line 714.
+
+[15]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 7
+81.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\udsrom.
+fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [16]
+<images/R_Q.png, id=281, 780.516pt x 361.35pt>
+File: images/R_Q.png Graphic file (type png)
+<use images/R_Q.png>
+Package pdftex.def Info: images/R_Q.png  used on input line 825.
+(pdftex.def)             Requested size: 448.79321pt x 207.77463pt.
+ [17]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 864.
+
+<images/P_tilde.png, id=295, 780.516pt x 361.35pt>
+File: images/P_tilde.png Graphic file (type png)
+<use images/P_tilde.png>
+Package pdftex.def Info: images/P_tilde.png  used on input line 867.
+(pdftex.def)             Requested size: 507.32939pt x 234.87471pt.
+
+Overfull \hbox (46.60815pt too wide) in paragraph at lines 867--868
+ [][] 
+ []
+
+[18 <./images/R_Q.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
+91.
+
+(C:\Users\Benjamin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (8.37074pt too wide) in paragraph at lines 891--891
+[][][]\T1/put/m/n/10 See [][]$\T1/cmtt/m/n/10 https : / / bitcoin . stackexchan
+ge . com / questions / 40944 / when-[]did-[]the-[]asic-[]mining-[]era-[]begin$[
+][]| 
+ []
+
+[19 <./images/P_tilde.png>]
+Overfull \hbox (5.90678pt too wide) in paragraph at lines 947--954
+\T1/put/m/n/12 mize a (pseudo)distance be-tween the ob-served and the sim-u-lat
+ed paths of the hashrate.
+ []
+
+
+Overfull \hbox (9.40532pt too wide) in paragraph at lines 959--962
+[]\T1/put/m/n/12 Update the sim-u-lated hashrate as fol-lows $\OML/cmm/m/it/12 
+Q[] \OT1/cmr/m/n/12 := [] []$\T1/put/m/n/12 , for $\OML/cmm/m/it/12 t \OT1/cmr/
+m/n/12 = 1\OML/cmm/m/it/12 ; [] ; T$\T1/put/m/n/12 . 
+ []
+
+[20]
+Overfull \hbox (5.87744pt too wide) in paragraph at lines 1048--1049
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+
+Package natbib Warning: Citation `Cong2018' on page 22 undefined on input line 
+1118.
+
+
+Package natbib Warning: Citation `Cong2018' on page 22 undefined on input line 
+1118.
+
+[22]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1133.
+
+<images/Q_all_1.png, id=345, 483.30562pt x 376.40625pt>
+File: images/Q_all_1.png Graphic file (type png)
+<use images/Q_all_1.png>
+Package pdftex.def Info: images/Q_all_1.png  used on input line 1138.
+(pdftex.def)             Requested size: 217.48552pt x 169.38124pt.
+<images/Q_all_2.png, id=346, 496.85625pt x 374.90062pt>
+File: images/Q_all_2.png Graphic file (type png)
+<use images/Q_all_2.png>
+Package pdftex.def Info: images/Q_all_2.png  used on input line 1139.
+(pdftex.def)             Requested size: 223.58324pt x 168.70372pt.
+
+Overfull \hbox (4.34755pt too wide) in paragraph at lines 1136--1141
+ [][] 
+ []
+
+[23]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1193.
+
+<images/P_P_sim_hf_2_wide.png, id=354, 903.375pt x 451.6875pt>
+File: images/P_P_sim_hf_2_wide.png Graphic file (type png)
+<use images/P_P_sim_hf_2_wide.png>
+Package pdftex.def Info: images/P_P_sim_hf_2_wide.png  used on input line 1196.
+
+(pdftex.def)             Requested size: 433.61508pt x 216.80753pt.
+<images/cours2_wide.png, id=355, 867.24pt x 433.62pt>
+File: images/cours2_wide.png Graphic file (type png)
+<use images/cours2_wide.png>
+Package pdftex.def Info: images/cours2_wide.png  used on input line 1197.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+<images/P_P_sim_delay_2_wide.png, id=356, 903.375pt x 451.6875pt>
+File: images/P_P_sim_delay_2_wide.png Graphic file (type png)
+<use images/P_P_sim_delay_2_wide.png>
+Package pdftex.def Info: images/P_P_sim_delay_2_wide.png  used on input line 11
+98.
+(pdftex.def)             Requested size: 433.61508pt x 216.80753pt.
+
+LaTeX Warning: Float too large for page by 11.90495pt on input line 1199.
+
+
+Overfull \hbox (2.32443pt too wide) in paragraph at lines 1203--1224
+[]\T1/put/m/it/12 Inspecting the en-try rule.--- \T1/put/m/n/12 Be-sides as-ses
+s-ing the ac-cu-racy of the sim-u-lated hashrate,
+ []
+
+[24 <./images/Q_all_1.png> <./images/Q_all_2.png>] [25 <./images/P_P_sim_hf_2_w
+ide.png> <./images/cours2_wide.png> <./images/P_P_sim_delay_2_wide.png>]
+[26]
+
+Package natbib Warning: Citation `Alvarez' on page 27 undefined on input line 1
+294.
+
+
+Package natbib Warning: Citation `Alvarez' on page 27 undefined on input line 1
+294.
+
+[27]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1328.
+
+<images/cout_variable2.png, id=387, 706.89093pt x 330.48468pt>
+File: images/cout_variable2.png Graphic file (type png)
+<use images/cout_variable2.png>
+Package pdftex.def Info: images/cout_variable2.png  used on input line 1331.
+(pdftex.def)             Requested size: 424.13783pt x 198.29233pt.
+[28]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1391.
+
+<images/Q_Q_sim_stop1.png, id=405, 433.62pt x 361.35pt>
+File: images/Q_Q_sim_stop1.png Graphic file (type png)
+<use images/Q_Q_sim_stop1.png>
+Package pdftex.def Info: images/Q_Q_sim_stop1.png  used on input line 1396.
+(pdftex.def)             Requested size: 234.1513pt x 195.1261pt.
+<images/Q_Q_sim_stop2.png, id=406, 433.62pt x 361.35pt>
+File: images/Q_Q_sim_stop2.png Graphic file (type png)
+<use images/Q_Q_sim_stop2.png>
+Package pdftex.def Info: images/Q_Q_sim_stop2.png  used on input line 1397.
+(pdftex.def)             Requested size: 234.1513pt x 195.1261pt.
+
+Overfull \hbox (31.5814pt too wide) in paragraph at lines 1394--1399
+ [][] 
+ []
+
+[29 <./images/cout_variable2.png>] [30 <./images/Q_Q_sim_stop1.png> <./images/Q
+_Q_sim_stop2.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1522.
+
+<images/all_sample_a_baseline.png, id=442, 697.10437pt x 307.90031pt>
+File: images/all_sample_a_baseline.png Graphic file (type png)
+<use images/all_sample_a_baseline.png>
+Package pdftex.def Info: images/all_sample_a_baseline.png  used on input line 1
+525.
+(pdftex.def)             Requested size: 453.11247pt x 200.13283pt.
+[32] [33 <./images/all_sample_a_baseline.png>]
+Package epstopdf Info: Source file: <images/Fig_bubble_constrained.eps>
+(epstopdf)                    date: 2019-08-22 06:47:01
+(epstopdf)                    size: 320656 bytes
+(epstopdf)             Output file: <images/Fig_bubble_constrained-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2019-08-22 06:48:53
+(epstopdf)                    size: 35380 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/Fig_bubble_constrain
+ed-eps-converted-to.pdf images/Fig_bubble_constrained.eps>
+(epstopdf)             \includegraphics on input line 1585.
+Package epstopdf Info: Output file is already uptodate.
+<images/Fig_bubble_constrained-eps-converted-to.pdf, id=461, 555.07375pt x 360.
+34625pt>
+File: images/Fig_bubble_constrained-eps-converted-to.pdf Graphic file (type pdf
+)
+<use images/Fig_bubble_constrained-eps-converted-to.pdf>
+Package pdftex.def Info: images/Fig_bubble_constrained-eps-converted-to.pdf  us
+ed on input line 1585.
+(pdftex.def)             Requested size: 430.17769pt x 279.26546pt.
+ [34] [35 <./images/Fig_bubble_constrained-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `Grenadier2002' on page 36 undefined on input 
+line 1649.
+
+
+Package natbib Warning: Citation `Grenadier2002' on page 36 undefined on input 
+line 1649.
+
+
+Package natbib Warning: Citation `Alsabah' on page 36 undefined on input line 1
+680.
+
+
+Package natbib Warning: Citation `Alsabah' on page 36 undefined on input line 1
+680.
+
+[36]
+
+Package natbib Warning: Citation `Pieters' on page 37 undefined on input line 1
+691.
+
+
+Package natbib Warning: Citation `Pieters' on page 37 undefined on input line 1
+691.
+
+[37]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1728.
+
+Package epstopdf Info: Source file: <images/Fig_Q_comp_stats.eps>
+(epstopdf)                    date: 2019-08-20 20:23:36
+(epstopdf)                    size: 198609 bytes
+(epstopdf)             Output file: <images/Fig_Q_comp_stats-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-08-20 20:25:12
+(epstopdf)                    size: 11841 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/Fig_Q_comp_stats-eps
+-converted-to.pdf images/Fig_Q_comp_stats.eps>
+(epstopdf)             \includegraphics on input line 1731.
+Package epstopdf Info: Output file is already uptodate.
+<images/Fig_Q_comp_stats-eps-converted-to.pdf, id=506, 515.9275pt x 401.5pt>
+File: images/Fig_Q_comp_stats-eps-converted-to.pdf Graphic file (type pdf)
+<use images/Fig_Q_comp_stats-eps-converted-to.pdf>
+Package pdftex.def Info: images/Fig_Q_comp_stats-eps-converted-to.pdf  used on 
+input line 1731.
+(pdftex.def)             Requested size: 361.14679pt x 281.04808pt.
+
+Package natbib Warning: Citation `Grenadier2002' on page 38 undefined on input 
+line 1742.
+
+
+Package natbib Warning: Citation `Grenadier2002' on page 38 undefined on input 
+line 1742.
+
+[38] [39 <./images/Fig_Q_comp_stats-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `Huberman' on page 40 undefined on input line 
+1796.
+
+
+Package natbib Warning: Citation `Huberman' on page 40 undefined on input line 
+1796.
+
+[40] [41]
+No file revision_v1.bbl.
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1919
+[][][]\T1/put/m/n/10 As $\OML/cmm/m/it/10 r$ \T1/put/m/n/10 tends to $\OML/cmm/
+m/it/10 $\T1/put/m/n/10 , $[][]$ con-verges to $[] []$ and $\OML/cmm/m/it/10 W
+ []$ \T1/put/m/n/10 tends to
+ []
+
+[43] [44] [45] [46]
+
+Package natbib Warning: Citation `Jeanblanc' on page 47 undefined on input line
+ 2106.
+
+
+Package natbib Warning: Citation `Jeanblanc' on page 47 undefined on input line
+ 2106.
+
+
+Overfull \hbox (16.96832pt too wide) in alignment at lines 2123--2132
+ [][][] []
+ []
+
+[47]
+
+Package natbib Warning: Citation `Biais2018' on page 48 undefined on input line
+ 2153.
+
+
+Package natbib Warning: Citation `Biais2018' on page 48 undefined on input line
+ 2153.
+
+<images/P_P_sim_hf_1_wide.png, id=593, 903.375pt x 451.6875pt>
+File: images/P_P_sim_hf_1_wide.png Graphic file (type png)
+<use images/P_P_sim_hf_1_wide.png>
+Package pdftex.def Info: images/P_P_sim_hf_1_wide.png  used on input line 2161.
+
+(pdftex.def)             Requested size: 433.61508pt x 216.80753pt.
+<images/cours1_wide.png, id=594, 867.24pt x 433.62pt>
+File: images/cours1_wide.png Graphic file (type png)
+<use images/cours1_wide.png>
+Package pdftex.def Info: images/cours1_wide.png  used on input line 2162.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+<images/P_P_sim_delay_1_wide.png, id=595, 903.375pt x 451.6875pt>
+File: images/P_P_sim_delay_1_wide.png Graphic file (type png)
+<use images/P_P_sim_delay_1_wide.png>
+Package pdftex.def Info: images/P_P_sim_delay_1_wide.png  used on input line 21
+63.
+(pdftex.def)             Requested size: 433.61508pt x 216.80753pt.
+[48]
+Overfull \vbox (11.90495pt too high) has occurred while \output is active []
+
+
+[49 <./images/P_P_sim_hf_1_wide.png> <./images/cours1_wide.png> <./images/P_P_s
+im_delay_1_wide.png>]
+<images/Kaiko_exchange_rate.png, id=610, 701.62125pt x 371.3875pt>
+File: images/Kaiko_exchange_rate.png Graphic file (type png)
+<use images/Kaiko_exchange_rate.png>
+Package pdftex.def Info: images/Kaiko_exchange_rate.png  used on input line 217
+1.
+(pdftex.def)             Requested size: 385.89287pt x 204.26375pt.
+<images/N.png, id=613, 780.516pt x 252.945pt>
+File: images/N.png Graphic file (type png)
+<use images/N.png>
+Package pdftex.def Info: images/N.png  used on input line 2195.
+(pdftex.def)             Requested size: 390.25705pt x 126.47218pt.
+ [50 <./images/Kaiko_exchange_rate.png> <./images/N.png>]
+<images/test_brownien.png, id=622, 780.516pt x 195.129pt>
+File: images/test_brownien.png Graphic file (type png)
+<use images/test_brownien.png>
+Package pdftex.def Info: images/test_brownien.png  used on input line 2224.
+(pdftex.def)             Requested size: 483.91492pt x 120.97871pt.
+
+Overfull \hbox (23.19368pt too wide) in paragraph at lines 2224--2225
+ [][] 
+ []
+
+<images/autocorrelogramme.png, id=624, 854.44218pt x 439.6425pt>
+File: images/autocorrelogramme.png Graphic file (type png)
+<use images/autocorrelogramme.png>
+Package pdftex.def Info: images/autocorrelogramme.png  used on input line 2243.
+
+(pdftex.def)             Requested size: 363.13963pt x 186.84894pt.
+[51 <./images/test_brownien.png>] [52 <./images/autocorrelogramme.png>]
+<images/comparaison_Q_Q_chap_log.png, id=639, 794.97pt x 361.35pt>
+File: images/comparaison_Q_Q_chap_log.png Graphic file (type png)
+<use images/comparaison_Q_Q_chap_log.png>
+Package pdftex.def Info: images/comparaison_Q_Q_chap_log.png  used on input lin
+e 2290.
+(pdftex.def)             Requested size: 445.18016pt x 202.35461pt.
+
+[53 <./images/comparaison_Q_Q_chap_log.png>]
+<images/out_of_sample_test.png, id=646, 780.516pt x 433.62pt>
+File: images/out_of_sample_test.png Graphic file (type png)
+<use images/out_of_sample_test.png>
+Package pdftex.def Info: images/out_of_sample_test.png  used on input line 2334
+.
+(pdftex.def)             Requested size: 390.25705pt x 216.80946pt.
+ [54 <./images/out_of_sample_test.png>]
+<images/Q_reversible_1.png, id=654, 867.24pt x 433.62pt>
+File: images/Q_reversible_1.png Graphic file (type png)
+<use images/Q_reversible_1.png>
+Package pdftex.def Info: images/Q_reversible_1.png  used on input line 2357.
+(pdftex.def)             Requested size: 476.98349pt x 238.49173pt.
+
+Overfull \hbox (16.26225pt too wide) in paragraph at lines 2357--2358
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2363.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 2363.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2363.
+
+[55 <./images/Q_reversible_1.png>]
+
+Package natbib Warning: Citation `Harrison' on page 56 undefined on input line 
+2398.
+
+
+Package natbib Warning: Citation `Harrison' on page 56 undefined on input line 
+2398.
+
+
+Package natbib Warning: Citation `Harrison' on page 56 undefined on input line 
+2416.
+
+
+Package natbib Warning: Citation `Harrison' on page 56 undefined on input line 
+2416.
+
+[56]
+Overfull \hbox (8.07169pt too wide) in paragraph at lines 2457--2458
+[] 
+ []
+
+<images/S9_price_history.png, id=685, 536.0025pt x 312.41719pt>
+File: images/S9_price_history.png Graphic file (type png)
+<use images/S9_price_history.png>
+Package pdftex.def Info: images/S9_price_history.png  used on input line 2462.
+(pdftex.def)             Requested size: 428.80258pt x 249.93408pt.
+[57]
+
+Package natbib Warning: Citation `Grenadier2000' on page 58 undefined on input 
+line 2483.
+
+
+Package natbib Warning: Citation `Grenadier2000' on page 58 undefined on input 
+line 2483.
+
+
+Package natbib Warning: Citation `Lucas' on page 58 undefined on input line 248
+6.
+
+
+Package natbib Warning: Citation `Lucas' on page 58 undefined on input line 248
+6.
+
+
+Overfull \hbox (4.33817pt too wide) in alignment at lines 2497--2509
+ [][][] []
+ []
+
+[58 <./images/S9_price_history.png>]
+Overfull \hbox (3.91432pt too wide) in paragraph at lines 2570--2577
+ []\T1/put/b/n/12 Industry dy-nam-ics with time-to-build.[] \T1/put/m/n/12 Hav-
+ing shown that we can use a cen-tral plan-
+ []
+
+[59]
+Overfull \hbox (38.65402pt too wide) in paragraph at lines 2613--2625
+\T1/put/m/n/12 yond the con-trol of the plan-ner at time $\OML/cmm/m/it/12 t: $
+\T1/put/m/n/12 Hence he seeks to max-i-mize $\OML/cmm/m/it/12 J[] [] $\T1/put/m
+/n/12 which
+ []
+
+[60]
+Overfull \hbox (21.1435pt too wide) detected at line 2636
+\OML/cmm/m/it/12 rV[] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 R[] []\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 H[]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 R[]V[] [] \OT1/cm
+r/m/n/12 + []\OML/cmm/m/it/12 V[] [] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 aK[]V[
+] [] :
+ []
+
+[61]
+
+Package natbib Warning: Citation `Abel' on page 62 undefined on input line 2723
+.
+
+
+Package natbib Warning: Citation `Abel' on page 62 undefined on input line 2723
+.
+
+
+Overfull \hbox (17.81667pt too wide) in alignment at lines 2737--2749
+ [][][] []
+ []
+
+[62]
+Overfull \hbox (25.13516pt too wide) in alignment at lines 2796--2806
+ [][][] []
+ []
+
+[63]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 2881.
+
+Package epstopdf Info: Source file: <images/Iteration_HJB.eps>
+(epstopdf)                    date: 2019-08-20 01:33:44
+(epstopdf)                    size: 189227 bytes
+(epstopdf)             Output file: <images/Iteration_HJB-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-08-20 01:34:02
+(epstopdf)                    size: 9892 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/Iteration_HJB-eps-co
+nverted-to.pdf images/Iteration_HJB.eps>
+(epstopdf)             \includegraphics on input line 2884.
+Package epstopdf Info: Output file is already uptodate.
+<images/Iteration_HJB-eps-converted-to.pdf, id=742, 564.1075pt x 356.33125pt>
+File: images/Iteration_HJB-eps-converted-to.pdf Graphic file (type pdf)
+<use images/Iteration_HJB-eps-converted-to.pdf>
+Package pdftex.def Info: images/Iteration_HJB-eps-converted-to.pdf  used on inp
+ut line 2884.
+(pdftex.def)             Requested size: 338.4671pt x 213.80038pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 2891.
+
+Package epstopdf Info: Source file: <images/Policy.eps>
+(epstopdf)                    date: 2019-08-20 02:00:01
+(epstopdf)                    size: 100919 bytes
+(epstopdf)             Output file: <images/Policy-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-08-20 02:00:11
+(epstopdf)                    size: 6545 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/Policy-eps-converted
+-to.pdf images/Policy.eps>
+(epstopdf)             \includegraphics on input line 2894.
+Package epstopdf Info: Output file is already uptodate.
+<images/Policy-eps-converted-to.pdf, id=745, 564.1075pt x 356.33125pt>
+File: images/Policy-eps-converted-to.pdf Graphic file (type pdf)
+<use images/Policy-eps-converted-to.pdf>
+Package pdftex.def Info: images/Policy-eps-converted-to.pdf  used on input line
+ 2894.
+(pdftex.def)             Requested size: 338.4671pt x 213.80038pt.
+
+Overfull \hbox (4.41194pt too wide) in paragraph at lines 2899--2919
+\T1/put/m/n/12 equal weight on the hashrate and price data. Our cal-i-brated ve
+c-tor $[] \OT1/cmr/m/n/12 = [] [][] \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ([]$\T1/p
+ut/m/n/12 . 
+ []
+
+[64] [65 <./images/Iteration_HJB-eps-converted-to.pdf> <./images/Policy-eps-con
+verted-to.pdf>]
+Overfull \hbox (11.05717pt too wide) in paragraph at lines 2945--2953
+\T1/put/m/n/12 start-ing at $[] \OML/cmm/m/it/12 : $\T1/put/m/n/12 Consider a p
+lan-ner which faces the ini-tial con-di-tion $[]$
+ []
+
+
+Overfull \hbox (2.98462pt too wide) in paragraph at lines 2976--3002
+\T1/put/m/n/12 The same deriva-tions as be-fore yields$\OML/cmm/m/it/12 j [] \O
+MS/cmsy/m/n/12  \OML/cmm/m/it/12 V[] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 j [
+]$\T1/put/m/n/12 .
+ []
+
+[66]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3058.
+[67] [68] [69]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3058.
+ (revision_v1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3058.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3058.
+
+Package rerunfilecheck Info: File `revision_v1.out' has not changed.
+(rerunfilecheck)             Checksum: 8A92F0168EDE2D57F59D5FCD52DB4B28;1942.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3058.
+ ) 
+Here is how much of TeX's memory you used:
+ 10573 strings out of 480790
+ 162671 string characters out of 2895894
+ 455307 words of memory out of 3000000
+ 26128 multiletter control sequences out of 15000+200000
+ 669578 words of font info for 116 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,19n,62p,1124b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Benjamin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+ctt0800.pk> <C:\Users\Benjamin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1200.pk> <C:\Users\Benjamin\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ectt1000.pk>{C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/f
+onts/enc/dvips/base/8r.enc}<C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Benjamin/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Benjamin/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Be
+njamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.
+pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Benjamin/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Benjamin/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Benjamin
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr5.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Benjamin/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Benjamin/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Benjamin/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Be
+njamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb><C:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/doublestroke/dsrom12.pfb><C:/Users/Benjamin/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/doublestroke/dsrom8.pfb><C:/Users/Benjamin/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Benj
+amin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/User
+s/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C
+:/Users/Benjamin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a
+.pfb>
+Output written on revision_v1.pdf (69 pages, 1550894 bytes).
+PDF statistics:
+ 1023 PDF objects out of 1200 (max. 8388607)
+ 167 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
+

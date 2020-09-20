@@ -20,6 +20,47 @@ def get_robuste(chaine):
         status=objet.status_code
     return objet
 
+
+def get_block_data(chaine):
+    redo = True
+    while(redo):
+        try:
+            objet=get_robuste(chaine).json()['data']
+            redo = False
+        except JSONDecodeError:
+            pass
+    return objet
+
+
+def interpol_missing_day(missing_day, first_day, last_day, objet):
+    if missing_day != first_day and missing_day != last_day:
+        return 0.5 * (objet[date_str(missing_day-1)] + objet[date_str(missing_day+1)])
+    elif missing_day == first_day:
+        return objet[date_str(missing_day+1)]
+    else:
+        return objet[date_str(missing_day-1)]
+
+
+def make_api_call_exchange_rate(indice_min, indice_max):
+
+    api_key = '2aa8589235dcf557b78fec8085b4e02b84a3b8f2aba9e07989cb6e8f42262459'
+
+    dt = datetime.strptime(date_str(indice_max + 1), '%Y-%m-%d')
+    toTs = str(int(time.mktime(dt.timetuple())))
+    limit = indice_max - indice_min 
+
+    main_url = 'https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD'
+    api_call = f'{main_url}&toTs={toTs}&limit={limit}&api_key={api_key}'
+
+    response = get(api_call)
+    if response.status_code != 200:
+        print('API call to cryptocompare did not work.')
+    else:
+        return [day['close'] for day in response.json()['Data']['Data']]
+        
+        
+        
+
 def update_donnees_brutes_cours():
 
     """ fonction qui met a jour la base donnees brutes et la base cours
@@ -45,9 +86,7 @@ def update_donnees_brutes_cours():
         print('last block up to date: ',dernier_bloc_ok)
         # on retrouve le nombre de jours pour couper les listes si elles contiennent
         # plein de zeros a cause d'une erreur...
-
-        objet=get_robuste('https://chain.api.btc.com/v3/block/'+str(dernier_bloc_ok))\
-               .json()['data']
+        objet=get_block_data('https://chain.api.btc.com/v3/block/'+str(dernier_bloc_ok))
         dernier_jour=floor((objet['timestamp']-1231459201)/(3600*24))
         N=N[0:dernier_jour+1]
         NB=NB[0:dernier_jour+1]
@@ -66,7 +105,7 @@ def update_donnees_brutes_cours():
 
         # 1231459201: 9/01/2009 00:00:01
     # on cherche le dernier bloc a recuperer
-    objet=get_robuste('https://chain.api.btc.com/v3/block/latest').json()['data']
+    objet = get_block_data('https://chain.api.btc.com/v3/block/latest')
     indice_max=floor((objet['timestamp']-1231459201)/(3600*24))
 
     last_block=objet['height']
@@ -91,7 +130,7 @@ def update_donnees_brutes_cours():
         for i in range(1,taille_requete):
             chaine_blocs=chaine_blocs+','+str(taille_requete*j+i+next_block)
         chaine='https://chain.api.btc.com/v3/block/'+chaine_blocs
-        objet=get_robuste(chaine).json()['data']
+        objet=get_block_data(chaine)
         for i in range(0,taille_requete):
             bloc=objet[i]
             indice=floor((bloc['timestamp']-1231459201)/(3600*24))
@@ -121,7 +160,7 @@ def update_donnees_brutes_cours():
             chaine_blocs=chaine_blocs+','+str(i)
             i+=1
         chaine='https://chain.api.btc.com/v3/block/'+chaine_blocs
-        objet=get_robuste(chaine).json()['data']
+        objet=get_block_data(chaine)
         if type(objet)==type(dict()):
             bloc=objet
             indice=floor((bloc['timestamp']-1231459201)/(3600*24))
@@ -170,41 +209,50 @@ def update_donnees_brutes_cours():
         cours = 722*[0]
 
     indice_min=len(cours)
-    taille_requete=10
-    nbr_requetes_full=floor((indice_max-indice_min)/taille_requete)
+    api_response = make_api_call_exchange_rate(indice_min, indice_max)
+    print(api_response)
+    cours += api_response
 
-    for j in range(0,nbr_requetes_full):
-        debut=taille_requete*j+indice_min
-        fin=taille_requete*(j+1)+indice_min-1
-        chaine='http://api.coindesk.com/v1/bpi/historical/close.json?start='+\
-                date_str(debut)+'&end='+date_str(fin)
-        objet=get_robuste(chaine).json()['bpi']
-        for i in range(0,taille_requete):
-            cours.append(objet[date_str(debut+i)])
-        try:
-            with open('cours','wb') as fichier:
-                mon_pickler=pickle.Pickler(fichier)
-                mon_pickler.dump(cours)
-        except OSError:
-            time.sleep(1)
-            with open('cours','wb') as fichier:
-                mon_pickler=pickle.Pickler(fichier)
-                mon_pickler.dump(cours)
-        print('last day up to date: ',date_str(fin))
-
-
-    # derniere requete
-    debut=taille_requete*nbr_requetes_full+indice_min
-    if debut <= indice_max-1:
-        chaine='http://api.coindesk.com/v1/bpi/historical/close.json?start='+\
-                date_str(debut)+'&end='+date_str(indice_max-1)
-        objet=get_robuste(chaine).json()['bpi']
-        for i in range(indice_min+taille_requete*nbr_requetes_full,indice_max):
-            cours.append(objet[date_str(i)])
+    
+##    taille_requete=10
+##    nbr_requetes_full=floor((indice_max-indice_min)/taille_requete)
+##
+##    for j in range(0,nbr_requetes_full):
+##        debut=taille_requete*j+indice_min
+##        fin=taille_requete*(j+1)+indice_min-1
+##        chaine='http://api.coindesk.com/v1/bpi/historical/close.json?start='+\
+##                date_str(debut)+'&end='+date_str(fin)
+##        objet=get_robuste(chaine).json()['bpi']
+##        print(objet)
+##        for i in range(0,taille_requete):
+##            try:
+##                cours.append(objet[date_str(debut+i)])
+##            except KeyError:
+##                cours.append(interpol_missing_day(debut + i, debut, debut + taille_requete - 1,objet))
+##        try:
+##            with open('cours','wb') as fichier:
+##                mon_pickler=pickle.Pickler(fichier)
+##                mon_pickler.dump(cours)
+##        except OSError:
+##            time.sleep(1)
+##            with open('cours','wb') as fichier:
+##                mon_pickler=pickle.Pickler(fichier)
+##                mon_pickler.dump(cours)
+##        print('last day up to date: ',date_str(fin))
+##
+##
+##    # derniere requete
+##    debut=taille_requete*nbr_requetes_full+indice_min
+##    if debut <= indice_max-1:
+##        chaine='http://api.coindesk.com/v1/bpi/historical/close.json?start='+\
+##                date_str(debut)+'&end='+date_str(indice_max-1)
+##        objet=get_robuste(chaine).json()['bpi']
+##        for i in range(indice_min+taille_requete*nbr_requetes_full,indice_max):
+##            cours.append(objet[date_str(i)])
     with open('cours','wb') as fichier:
             mon_pickler=pickle.Pickler(fichier)
             mon_pickler.dump(cours)
-    print('last day up to date: ',date_str(indice_max-1))
+##    print('last day up to date: ',date_str(indice_max-1))
 
 def  creation_base_donnees_traites():
 
@@ -330,7 +378,7 @@ def charger_donnees():
 
         
 if __name__ == "__main__":
-    #update_donnees_brutes_cours()
+    update_donnees_brutes_cours()
     creation_base_donnees_traites()
     export_excel()
 

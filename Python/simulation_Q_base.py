@@ -55,6 +55,8 @@ def graphique_simulation(a,B_tilde,Q_sim,P_sim,Qp,Pp,d,f,type=(1,)):
     lw=3 #linewidth
     fg=(13,5)
     ft='xx-large'
+
+    halvings = [1419, 2738, 4140]
     
     xdates=[date_base(j) for j in range(d,f+1)]
     
@@ -66,16 +68,13 @@ def graphique_simulation(a,B_tilde,Q_sim,P_sim,Qp,Pp,d,f,type=(1,)):
             ax1.plot(xdates,log(Qp),'r',linewidth=lw,label='log Q')
             ax1.plot(xdates,log(Q_sim),'b',linestyle='--',\
                      linewidth=lw,label=r'log $Q^{sim}$')
-
-            if (d<1419) and (f>1419):
-                ax1.axvline(x=date_base(1419),color='k',linestyle=':',\
-                            linewidth=lw,label='halving')
-            if (d<2738) and (f>2738):
-                ax1.axvline(x=date_base(2738),color='k',linestyle=':',\
-                            linewidth=lw,label='halving')   
+            for halving in halvings:
+                if d < halving and f > halving:
+                    ax1.axvline(x=date_base(halving),color='k',linestyle=':',\
+                                linewidth=lw,label='halving')                  
             gcf().autofmt_xdate()
             ax1.tick_params(axis='both',labelsize=ft)
-            ax1.xaxis.set_major_locator(MonthLocator(interval=9))
+            ax1.xaxis.set_major_locator(MonthLocator(interval=6))
             legend(fontsize=ft)
             ax1.margins(0.03)
             show()
@@ -87,15 +86,13 @@ def graphique_simulation(a,B_tilde,Q_sim,P_sim,Qp,Pp,d,f,type=(1,)):
                  label='observed payoff')
             ax2.plot(xdates,[B_tilde/a for a in At],'r',linewidth=lw,linestyle='-.',\
                  label='barrier')
-            if (d<1419) and (f>1419):
-                ax2.axvline(x=date_base(1419),color='k',linestyle=':',\
-                            linewidth=lw,label='halving')
-            if (d<2738) and (f>2738):
-                ax2.axvline(x=date_base(2738),color='k',linestyle=':',\
-                            linewidth=lw,label='halving')  
+            for halving in halvings:
+                if d < halving and f > halving:
+                    ax2.axvline(x=date_base(halving),color='k',linestyle=':',\
+                                linewidth=lw,label='halving')   
             gcf().autofmt_xdate()
             ax2.tick_params(axis='both',labelsize=ft)
-            ax2.xaxis.set_major_locator(MonthLocator(interval=9))
+            ax2.xaxis.set_major_locator(MonthLocator(interval=6))
             if d<1000:
                 legend(fontsize=ft)
                 gcf().subplots_adjust(left=0.15)
@@ -119,7 +116,7 @@ def plot_cours(cours,d,f):
     xdates=[date_base(j) for j in range(d,f+1)] # date index -> real dates
     fig, ax = subplots(figsize=fg)
     ax.plot(xdates,cours[d:f+1],linewidth=lw,label='exchange rate')
-    ax.xaxis.set_major_locator(MonthLocator(interval=9))
+    ax.xaxis.set_major_locator(MonthLocator(interval=6))
     ax.xaxis.set_major_formatter(DateFormatter('%Y-%m'))
     gcf().autofmt_xdate()
     ax.tick_params(axis='both',labelsize=ft)

@@ -36,7 +36,8 @@ ax2.tick_params(axis='y',colors='r',labelsize=ft)
 ##gcf().subplots_adjust(left=0.15, right=0.82)
 show()
 
-a0=0.000959 #Moore law
+#a0=0.000959 #Moore law
+a0 = 0.0014
 xdates=[date_base(j) for j in range(d,f+1)]
 P_det=[a*p for a,p in zip(exp(a0*arange(0,f+1-d)),P[d:f+1])]
 

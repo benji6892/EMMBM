@@ -7,11 +7,6 @@ from matplotlib.dates import *
 from xlwt import Workbook
 
 R,P,Q,cours=charger_donnees() # load the data.
-print(len(R))
-print(len(P))
-print(len(Q))
-print(len(cours))
-print(date_base(4224))
 
 
 ###*******************************************************************************
@@ -107,8 +102,60 @@ print(date_base(4224))
 ##print('r fixe: ',r,'\n')
 ##
 ##print('couts totaux: ',estimation_CT(a,alpha,sigma2,B_tilde,r),'\n')
-##
-##
+
+###*******************************************************************************
+###                             third periode
+###*******************************************************************************
+
+print('**********************************\ndeuxieme periode\n')
+
+
+d=3491 #start date 2091
+#f=4223 #end date 3003 
+f = len(R) - 1
+print(date_str(d))
+
+#d=2091 #start date 2091
+#f=3003 #end date 3003 
+#f=3803 #end date 3003 
+
+r=0.1/365 
+
+a=0.002
+B_tilde=0.6
+Rp=R[d:f+1]
+Pp=P[d:f+1]
+Qp=Q[d:f+1]
+Q0=Q[d-1]
+
+x0=estimation_a_B_tilde(a,B_tilde,R,Q,d,f)
+a=x0['x'][0]
+B_tilde=x0['x'][1]
+print('a: ',a)
+print('B_tilde: ',B_tilde)
+
+Q_sim,P_sim=simulationQ(a,B_tilde,Rp,Q0)
+graphique_simulation(a,B_tilde,Q_sim,P_sim,Qp,Pp,d,f,type=(1,2))
+plot_cours(cours,d,f)
+
+alpha,sigma2=estimation_alpha_sigma2(Rp)
+intervalle=IC(Rp,0.95)
+
+print('parametres annuels\n')
+
+mu=alpha-0.5*sigma2
+print('mu: ',365*mu)
+print([365*i for i in intervalle[0]])
+print('\nsigma2: ',365*sigma2)
+print([365*i for i in intervalle[1]])
+print('\na: ',a,'\n')
+print('r fixe: ',r,'\n')
+
+print('couts totaux: ',estimation_CT(a,alpha,sigma2,B_tilde,r),'\n')
+
+
+
+
 #####*******************************************************************************
 #####                     second period and bubble (+ export)
 #####*******************************************************************************

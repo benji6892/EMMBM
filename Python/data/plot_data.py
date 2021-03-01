@@ -6,30 +6,45 @@ from numpy import log, exp, arange
 from util import compute_P
 from data.get_data import load_data, load_exchange_rate, as_datetime
 
-def plot_data():
+def plot_data(black_and_white=False):
     days, R, Q, P, Q_initial = load_data()
 
     FIG_SIZE = (10.8,5)
     FONT_SIZE = 'xx-large'
     fig, ax1 = subplots(figsize=FIG_SIZE)
-    ax1.plot(days, log(R) ,'b',linewidth=3, label='log Rt', linestyle='--')
-    ax1.set_ylabel('log Rt', color='b', fontsize=FONT_SIZE)
-    ax1.tick_params(axis='y', colors='b', labelsize=FONT_SIZE)
+    if black_and_white:
+        ax1.plot(days, log(R) ,'k',linewidth=3, label='log Rt', linestyle='--')
+        ax1.set_ylabel('log Rt', color='k', fontsize=FONT_SIZE)
+        ax1.tick_params(axis='y', colors='k', labelsize=FONT_SIZE)
+    else:
+        ax1.plot(days, log(R) ,'b',linewidth=3, label='log Rt', linestyle='--')
+        ax1.set_ylabel('log Rt', color='b', fontsize=FONT_SIZE)
+        ax1.tick_params(axis='y', colors='b', labelsize=FONT_SIZE)
     ax1.tick_params(axis='x', labelsize=FONT_SIZE)
     ax1.xaxis.set_major_formatter(DateFormatter('%Y'))
     gcf().autofmt_xdate()
+    legend(fontsize=FONT_SIZE)
 
     ax2 = ax1.twinx()
-    ax2.plot(days, log(Q), 'r', linewidth=3, label='log Qt')
-    ax2.set_ylabel('log Qt', color='r', fontsize=FONT_SIZE)
-    ax2.tick_params(axis='y' ,colors='r', labelsize=FONT_SIZE)
+    if black_and_white:
+        ax2.plot(days, log(Q), 'grey', linewidth=3, label='log Qt')
+        ax2.set_ylabel('log Qt', color='k', fontsize=FONT_SIZE)
+        ax2.tick_params(axis='y' ,colors='k', labelsize=FONT_SIZE)
+    else:
+        ax2.plot(days, log(Q), 'r', linewidth=3, label='log Qt')
+        ax2.set_ylabel('log Qt', color='r', fontsize=FONT_SIZE)
+        ax2.tick_params(axis='y' ,colors='r', labelsize=FONT_SIZE)
+    legend(fontsize=FONT_SIZE, loc='lower right')
     show()
 
     trend = 0.0014  # Moore law: 0.000959
     logP_detrended = [log(p) + trend * d for p,d in zip(P, range(len(P)))]
 
     fig, ax = subplots(figsize=FIG_SIZE)
-    ax.plot(days, logP_detrended, linewidth=3,color='g',label=r'$log(P_t)+at$')
+    if black_and_white:
+        ax.plot(days, logP_detrended, linewidth=3,color='grey',label=r'$log(P_t)+at$')
+    else:
+        ax.plot(days, logP_detrended, linewidth=3,color='g',label=r'$log(P_t)+at$')
     ax.axvline(x=as_datetime('2013-04-01'),color='k',linestyle='dashed',linewidth=3)
     ax.axvline(x=as_datetime('2014-12-01'),color='k',linestyle='dashed',linewidth=3)
     ax.text(as_datetime('2011-10-01'),5,'GPUs',color='k',fontsize=FONT_SIZE)
@@ -41,7 +56,7 @@ def plot_data():
     show()
 
 
-def plot_exchange_rate(date_from=None, date_to=None):
+def plot_exchange_rate(date_from=None, date_to=None, black_and_white=False):
 
     days, exchange_rate = load_exchange_rate(date_from, date_to)
 
@@ -49,7 +64,10 @@ def plot_exchange_rate(date_from=None, date_to=None):
     FONT_SIZE = 'xx-large'
     
     fig, ax = subplots(figsize=FIG_SIZE)
-    ax.plot(days, exchange_rate, linewidth=3, label='exchange rate')
+    if black_and_white:
+        ax.plot(days, exchange_rate, color='k', linewidth=3, label='exchange rate')
+    else:
+        ax.plot(days, exchange_rate, linewidth=3, label='exchange rate')
     ax.xaxis.set_major_locator(MonthLocator(interval=6))
     ax.xaxis.set_major_formatter(DateFormatter('%Y-%m'))
     gcf().autofmt_xdate()

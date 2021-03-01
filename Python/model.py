@@ -5,7 +5,8 @@ from matplotlib.dates import MonthLocator
 from util import compute_barrier, compute_P
 from random import seed, randint
 from math import floor
-from data.get_data import load_data, HALVINGS
+from data.get_data import load_data, HALVINGS, as_datetime
+from util import linestyles
 
 FIGURE_SIZE = (13, 5)
 LINEWIDTH = 3
@@ -66,21 +67,33 @@ class Model:
         ax.xaxis.set_major_locator(MonthLocator(interval=6))
         ax.margins(0.03)
 
-    def plot_comparaison_Q(self, Q, Q_simulated, days):
+    def plot_comparaison_Q(self, Q, Q_simulated, days, black_and_white=False):
         fig, ax = subplots(figsize=FIGURE_SIZE)
-        ax.plot(days, log(Q), 'r', linewidth=LINEWIDTH, label='log Q')
-        ax.plot(days, log(Q_simulated), 'b', linestyle='--',
-                linewidth=LINEWIDTH, label=r'log $Q^{sim}$')
+        if black_and_white:
+            ax.plot(days, log(Q), 'k', linewidth=LINEWIDTH, label='log Q')
+            ax.plot(days, log(Q_simulated), 'k', linestyle='--',
+                    linewidth=LINEWIDTH, label=r'log $Q^{sim}$')
+        else:
+            ax.plot(days, log(Q), 'r', linewidth=LINEWIDTH, label='log Q')
+            ax.plot(days, log(Q_simulated), 'b', linestyle='--',
+                    linewidth=LINEWIDTH, label=r'log $Q^{sim}$')
         self._plot_halvings_and_config(ax, days)
         legend(fontsize = FONT_SIZE)
         show()
 
-    def plot_comparaison_P(self, P, P_simulated, barrier, days):
+    def plot_comparaison_P(self, P, P_simulated, barrier, days, black_and_white=False):
         fig, ax = subplots(figsize=FIGURE_SIZE)
-        ax.plot(days, P_simulated, 'b', linewidth=LINEWIDTH, linestyle='--',
-                label='simulated payoff')
-        ax.plot(days, P, 'g', linewidth=LINEWIDTH, label='observed payoff')
-        ax.plot(days, barrier, 'r', linewidth=LINEWIDTH, linestyle='-.', label='barrier')
+        if black_and_white:
+            ax.plot(days, P, 'grey', linewidth=LINEWIDTH, label='observed payoff')
+            ax.plot(days, P_simulated, 'silver', linewidth=LINEWIDTH, linestyle=linestyles['densely dashed'],
+                    label='simulated payoff')
+            ax.plot(days, barrier, 'k', linewidth=LINEWIDTH, linestyle='-.', label='barrier')
+        else:
+            ax.plot(days, P_simulated, 'b', linewidth=LINEWIDTH, linestyle='--',
+                    label='simulated payoff')
+            ax.plot(days, P, 'g', linewidth=LINEWIDTH, label='observed payoff')
+            ax.plot(days, barrier, 'r', linewidth=LINEWIDTH, linestyle='-.', label='barrier')
+        legend(fontsize = FONT_SIZE)
         self._plot_halvings_and_config(ax, days)
         show()
 

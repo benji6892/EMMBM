@@ -4,9 +4,9 @@ and compares with model calibration """
 from datetime import date
 from matplotlib.pyplot import subplots, gcf, legend, show
 from numpy import log, exp
-from data.get_data import load_data
+from data.get_data import load_data, as_datetime
 
-def asics_data():
+def asics_data(black_and_white=False):
     
     asics=[{},{},{},{},{},{},{},{},{},{},{}]
 
@@ -99,13 +99,19 @@ def asics_data():
 
 
     FIGURE_SIZE = (11.5, 5)
-    FONT_SIZE = 'xx-large'
+    FONT_SIZE = 'x-large'
 
     fig, ax = subplots(figsize=FIGURE_SIZE)
-    ax.plot(dates, log(electricity), linewidth=3, color='red', label='Electricity consumption (log watt/Th/s)')
-    ax.plot(dates, log(electricity), 'ro', linewidth=3)
-    ax.plot(dates, log(price_terahash_second), linewidth=3, color='blue', label='Observed Price              (log $/Th/s)')
-    ax.plot(dates, log(price_terahash_second), 'bo',linewidth=3)
+    if black_and_white:
+        ax.plot(dates, log(electricity), linewidth=3, color='grey', label='Electricity consumption (log watt/Th/s)')
+        ax.plot(dates, log(electricity), color='grey', marker= 'o', linewidth=3)
+        ax.plot(dates, log(price_terahash_second), linewidth=3, color='silver', label='Observed Price              (log $/Th/s)')
+        ax.plot(dates, log(price_terahash_second), color='silver', marker= 'o', linewidth=3)
+    else:
+        ax.plot(dates, log(electricity), linewidth=3, color='red', label='Electricity consumption (log watt/Th/s)')
+        ax.plot(dates, log(electricity), 'ro', linewidth=3)
+        ax.plot(dates, log(price_terahash_second), linewidth=3, color='blue', label='Observed Price              (log $/Th/s)')
+        ax.plot(dates, log(price_terahash_second), 'bo',linewidth=3)
 
     technical_progress = 0.76/365  # estimated with baseline model, second period
     total_costs = 1825  # estimated with baseline model, second period
@@ -120,8 +126,30 @@ def asics_data():
     days, R, Q, P, Q_initial = load_data('2013-11-28', '2020-08-09')
 
     estimatedPrice = [log(beginning_price_calibrated) - technical_progress * day for day in range(len(days)) ]
-    ax.plot(days, estimatedPrice, linewidth=3, color='green', linestyle = ':', label = 'Calibrated price             (log $/Th/s)')
+    if black_and_white:
+        ax.plot(days, estimatedPrice, linewidth=3, color='k', linestyle = ':', label = 'Calibrated price             (log $/Th/s)')
+    else:
+        ax.plot(days, estimatedPrice, linewidth=3, color='green', linestyle = ':', label = 'Calibrated price             (log $/Th/s)')
     ax.tick_params(axis='both',labelsize=FONT_SIZE)
+
+    ax.text(as_datetime('2013-11-01'), 6.9, 'S1', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2014-02-01'), 6.6, 'S2', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2014-05-01'), 6.2, 'S3', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2014-08-01'), 6.1, 'S4', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2014-12-01'), 5.3, 'S5', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2015-07-01'), 5, 'S7', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2016-03-01'), 4.2, 'Antminer S9', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2017-05-01'), 5.2, 'Antminer', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2017-09-01'), 4.7, 'S9', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2018-08-01'), 5.7, 'Pangolin', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2018-08-01'), 5.2, 'Whatsminer', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2018-08-01'), 4.7, 'M10', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2019-04-01'), 4.3, 'M20', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2020-03-01'), 4.5, 'Antminer', color='k', fontsize=FONT_SIZE)
+    ax.text(as_datetime('2020-03-01'), 4, 'S19', color='k', fontsize=FONT_SIZE)
+
+    
     gcf().autofmt_xdate()
     legend(fontsize=FONT_SIZE)
     show()
+

@@ -6,18 +6,23 @@ from models.finite_horizon_model import load_finite_horizon_model_data
 from util import plot_comparaison_many_Q
 
 
-def models_hashrate_comparaison(period):
+def models_hashrate_comparaison(period, black_and_white=False):
     
     days, R, Q, P, Q_initial = load_data(eval(f'PERIOD_{str(period)}_START'), eval(f'PERIOD_{str(period)}_END'))
     Q_sim_halving, barrier_halving = load_finite_horizon_model_data(period)
 
-    delay_hashrate = {'colour': 'm', 'linestyle': '-.', 'label': r'log $Q^{sim}$ delay'}
-    baseline_hashrate = {'colour': 'g', 'linestyle': ':', 'label': 'log $Q^{sim}$ baseline'}
-    finite_horizon_hashrate = {'colour': 'b', 'linestyle': '--', 'label': r'log $Q^{sim}$ halving'}
+    if black_and_white:
+        delay_hashrate = {'colour': 'dimgrey', 'linestyle': '-.', 'label': r'log $Q^{sim}$ delay'}
+        baseline_hashrate = {'colour': 'grey', 'linestyle': ':', 'label': 'log $Q^{sim}$ baseline'}
+        finite_horizon_hashrate = {'colour': 'silver', 'linestyle': '--', 'label': r'log $Q^{sim}$ halving'}
+    else:
+        delay_hashrate = {'colour': 'm', 'linestyle': '-.', 'label': r'log $Q^{sim}$ delay'}
+        baseline_hashrate = {'colour': 'g', 'linestyle': ':', 'label': 'log $Q^{sim}$ baseline'}
+        finite_horizon_hashrate = {'colour': 'b', 'linestyle': '--', 'label': r'log $Q^{sim}$ halving'}
 
     baseline_hashrate['data'] = basic_model.Q_simulate(basic_model_initial_parameters[str(period)], R, Q_initial)
     delay_hashrate['data'] = delay_model.Q_simulate(delay_model_initial_parameters[str(period)], R, Q_initial)
     finite_horizon_hashrate['data'] = Q_sim_halving
 
-    plot_comparaison_many_Q(days, Q, (13, 5), baseline_hashrate, delay_hashrate, finite_horizon_hashrate)
+    plot_comparaison_many_Q(days, Q, (7, 5), baseline_hashrate, delay_hashrate, finite_horizon_hashrate, black_and_white=black_and_white)
 

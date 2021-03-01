@@ -13,12 +13,12 @@ from config import PERIOD_1_START, PERIOD_1_END, PERIOD_2_START, PERIOD_2_END,\
 plot_explanatory_graphs()
 plot_data()
 
-for period in range(1, 4):
+for period in range(2, 3):
     basic_model.full_pipeline(eval(f'PERIOD_{period}_START'), eval(f'PERIOD_{period}_END'),\
                               basic_model_initial_parameters[f'{period}'], estimate_parameters=True)
     delay_model.full_pipeline(eval(f'PERIOD_{period}_START'), eval(f'PERIOD_{period}_END'),\
                               delay_model_initial_parameters[f'{period}'], estimate_parameters=True)
-    # for the model with finite horizon, see th Matlab code.
+    # for the model with finite horizon, see the Matlab code.
     models_hashrate_comparaison(period)
 
 asics_data()

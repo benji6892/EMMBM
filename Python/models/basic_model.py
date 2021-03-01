@@ -41,7 +41,7 @@ def total_costs(parameters, trend_brownian, var_brownian, interest_rate):
     return barrier_initial_estimate * (beta - 1) / (beta * (interest_rate - trend_brownian))
 
 
-def plot_explanatory_graphs():
+def plot_explanatory_graphs(black_and_white=False):
     days, R, Q, P, Q_initial = load_data('2014-09-30', '2017-03-31')
     Q_sim = simulationQ((0.00207, 5.3), R, Q_initial)
     P_sim = compute_P(R, Q_sim)
@@ -50,8 +50,12 @@ def plot_explanatory_graphs():
     FONT_SIZE = 'xx-large'
     FIGURE_SIZE = (10.8, 2.7)
     fig, ax = subplots(figsize=FIGURE_SIZE)
-    ax.plot(days, barrier, 'r', linewidth=3, label='barrier', linestyle='dashed')
-    ax.plot(days, P_sim, 'g', linewidth=3, label='payoff')
+    if black_and_white:
+        ax.plot(days, barrier, 'k', linewidth=3, label='barrier', linestyle='dashed')
+        ax.plot(days, P_sim, 'grey', linewidth=3, label='payoff')
+    else:
+        ax.plot(days, barrier, 'r', linewidth=3, label='barrier', linestyle='dashed')
+        ax.plot(days, P_sim, 'g', linewidth=3, label='payoff')
     gcf().autofmt_xdate()
     legend(fontsize=FONT_SIZE)
     ax.set_xlabel('time',fontsize=FONT_SIZE)
@@ -61,7 +65,10 @@ def plot_explanatory_graphs():
     show()
 
     fig, ax = subplots(figsize=FIGURE_SIZE)
-    ax.plot(days, log(Q_sim), 'b', linewidth=3, label='computing power')
+    if black_and_white:
+        ax.plot(days, log(Q_sim), 'k', linewidth=3, label='computing power')
+    else:
+        ax.plot(days, log(Q_sim), 'b', linewidth=3, label='computing power')
     gcf().autofmt_xdate()
     legend(fontsize=FONT_SIZE)
     ax.set_xlabel('time',fontsize=FONT_SIZE)

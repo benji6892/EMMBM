@@ -90,6 +90,20 @@ def out_of_sample_experiment():
     basic_model.plot_comparaison_Q(Q, Q_simulated, days)
 
 
+def out_of_sample_experiment_3():
+
+    # estimate model parameters on period: 2014-10-01 -> 2015-04-15
+    days, R, Q, P, Q_initial = load_data('2018-07-31', '2020-05-01')
+    parameters = basic_model.estimate_parameters(R, Q, P, Q_initial, basic_model_initial_parameters['3'])
+    print(parameters)
+    print(basic_model_initial_parameters['3'])
+    
+    # simulate and plot hashrate on whole period based on parameters estimated above
+    days, R, Q, P, Q_initial = load_data('2018-07-31', '2020-09-19')
+    Q_simulated = basic_model.Q_simulate(parameters, R, Q_initial)
+    basic_model.plot_comparaison_Q(Q, Q_simulated, days)
+
+
 def reversible_investment():
     days, R, Q, P, Q_initial = load_data('2011-03-31', '2013-01-31')
 
@@ -138,18 +152,20 @@ def model_with_variable_costs():
         variable_costs_model.full_pipeline(PERIOD_2_START , PERIOD_2_END,\
                                         variable_costs_model_initial_parameters['2'], estimate_parameters=True)
 
-for period in [1, 3]:
-    finite_horizon_model.plot_comparaison_P(period)
-    plot_exchange_rate(eval(f'PERIOD_{period}_START'), eval(f'PERIOD_{period}_END'))
+##for period in [1, 3]:
+##    finite_horizon_model.plot_comparaison_P(period)
+##    plot_exchange_rate(eval(f'PERIOD_{period}_START'), eval(f'PERIOD_{period}_END'))
+##
+##plot_number_blocks_per_day()
+##
+##plot_log_r_increments()
+##
+##out_of_sample_experiment()
+##
+##reversible_investment()
+##
+##construction_Q()
+##
+##model_with_variable_costs()
 
-plot_number_blocks_per_day()
-
-plot_log_r_increments()
-
-out_of_sample_experiment()
-
-reversible_investment()
-
-construction_Q()
-
-model_with_variable_costs()
+out_of_sample_experiment_3()
